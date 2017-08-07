@@ -109,7 +109,7 @@ RCT_CUSTOM_VIEW_PROPERTY(region, MKCoordinateRegion, AIRMap)
     // don't emit region change events when we are setting the region
     BOOL originalIgnore = view.ignoreRegionChanges;
     view.ignoreRegionChanges = YES;
-    [view setRegion:[RCTConvert MKCoordinateRegion:json] animated:NO];
+    [view setInitialRegion:[RCTConvert MKCoordinateRegion:json]];
     view.ignoreRegionChanges = originalIgnore;
 }
 
