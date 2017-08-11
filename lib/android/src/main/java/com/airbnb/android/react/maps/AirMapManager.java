@@ -77,7 +77,7 @@ public class AirMapManager extends ViewGroupManager<AirMapView> {
 
   @ReactProp(name = "initialRegion")
   public void setInitialRegion(AirMapView view, ReadableMap initialRegion) {
-    view.setInitialRegion(region);
+    view.setInitialRegion(initialRegion);
   }
 
   @ReactProp(name = "mapType")
