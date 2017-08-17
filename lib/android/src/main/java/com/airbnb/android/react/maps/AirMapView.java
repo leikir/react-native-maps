@@ -362,9 +362,9 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
   }
 
   public void setInitialRegion(ReadableMap initialRegion) {
-    if (!initialRegionSet) {
-      initialRegionSet = true;
+    if (!initialRegionSet && initialRegion != null) {
       setRegion(initialRegion);
+      initialRegionSet = true;
     }
   }
 
